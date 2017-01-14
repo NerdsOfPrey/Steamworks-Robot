@@ -10,12 +10,6 @@
 #include <CANTalon.h>
 #include <AHRS.h>
 
-int main()
-{
-	return 0;
-}
-
-
 class Robot: public frc::IterativeRobot {
 public:
 	void RobotInit() {
