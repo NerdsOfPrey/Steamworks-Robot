@@ -37,7 +37,7 @@ public:
 	 *
 	 * You can add additional auto modes by adding additional comparisons to the
 	 * if-else structure below with additional strings. If using the
-	 * SendableChooser make sure to add them to the chooser code above as well.
+	 * SendableChooser make sure to add them to the chooser code above as well
 	 */
 	void AutonomousInit() override {
 		autoSelected = chooser.GetSelected();
