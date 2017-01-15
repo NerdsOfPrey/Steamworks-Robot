@@ -66,9 +66,9 @@ public:
 	void TeleopPeriodic() {
 
 		if(Button6){
-			intakeMotor->Set(50);
+			intakeMotor->Set(1);
 		}else{
-			intakeMotor->Set(0);
+			intakeMotor->Set(-1);
 
 
 		}
