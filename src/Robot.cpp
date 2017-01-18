@@ -68,7 +68,7 @@ public:
 		if(Button6){
 			intakeMotor->Set(1);
 		}else{
-			intakeMotor->Set(-1);
+			intakeMotor->Set(0);
 
 
 		}
