@@ -21,11 +21,6 @@ public:
 		PTOMotor2 = new CANTalon(2);
 
 		stick = new Joystick(0);
-
-		Button6 = new JoystickButton(stick, 6);
-		intakeMotor = new CANTalon(1);
-
-
 	}
 
 	/*
@@ -65,15 +60,6 @@ public:
 
 	void TeleopPeriodic() {
 
-		if(Button6){
-			intakeMotor->Set(1);
-		}else{
-			intakeMotor->Set(0);
-
-
-		}
-
-
 	}
 
 	void TestPeriodic() {
@@ -81,21 +67,14 @@ public:
 	}
 
 private:
-
 	frc::LiveWindow* lw = LiveWindow::GetInstance();
 	frc::SendableChooser<std::string> chooser;
 	const std::string autoNameDefault = "Default";
 	const std::string autoNameCustom = "My Auto";
 	std::string autoSelected;
-	Joystick* stick;
-	CANTalon* PTOMotor1;
-	CANTalon* PTOMotor2;
-
-
-
-
-	JoystickButton* Button6;
-
-
-	CANTalon* intakeMotor;
+	Joystick *stick;
+	CANTalon *PTOMotor1;
+	CANTalon *PTOMotor2;
 };
+
+START_ROBOT_CLASS(Robot)
